@@ -69,7 +69,7 @@ h2 {
 
 /* Модальне вікно */
 #modal.hidden {
-    display: 
+    display: none;
 }
 
 #modal {
