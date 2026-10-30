@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            align-content: stretch;
+            height: 75px;
+            background-color: rgb(251, 253, 253);
+        }
+
+        /*.item {
+            flex-shrink: 1;
+            flex-basis: 150px;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+        }*/
+
+        .active {
+            background-color:#3366FF;
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src="assets/Logo.png" alt="logo">
+            <nav>
+                <a href="Sign_up">Sign Up</a>
+                <a class="active" href="Log_in">Log In</a>
+            </nav>
+
+        </div>
+
+
+    </header>
+
+</body>
+
+</html>
