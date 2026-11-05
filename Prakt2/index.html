@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="styles.css">
     <style>
         .container {
             display: flex;
@@ -15,6 +15,18 @@
             align-content: stretch;
             height: 75px;
             background-color: rgb(251, 253, 253);
+            padding: 0 75px;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            align-content: stretch;
+            height: 500px;
+            background-color: #F7F5FD;
+            padding: 0 50px;
         }
 
         /*.item {
@@ -27,8 +39,8 @@
 
         .active {
             border-radius: 10px;
-            width: 153px;
-            height: 54px;
+            width: 154px;
+            height: 53px;
             background-color: #3366FF;
             margin: 10px;
             padding: 10px;
@@ -39,13 +51,24 @@
 <body>
     <header>
         <div class="container">
-            <img src="assets/Logo.png" alt="logo">
+            <img src="assets/Logo.png" alt="logo" height="50" width="200">
             <nav>
                 <a href="Sign_up">Sign Up</a>
                 <a class="active" href="Log_in">Log In</a>
             </nav>
         </div>
     </header>
+    
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Pet Store <br>& Beyond</h1>
+                <p>This is a sample landing page, created with Figma and Anima. No coding involved.</p>
+            </div>
+            
+            <img src="assets/Image1.png" alt="dogs" height="460px" width="500px">
+        </section>
+    </main>
 
 </body>
 

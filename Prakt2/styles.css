@@ -1,0 +1,50 @@
+:root {
+    --text-color: #2d2d2d;
+    --gray: #d8d8d8;
+    --blue: #36f;
+    --yellow: #f8d57e;
+    --pink: #f2bfaf;
+    --red: #ff6250;
+    --green: #009379;
+    --light-purple: #ece7fb;
+    --off-white: #fcfaf5;
+    --white: #fff;
+    --font-family: "Poppins", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 1.8rem;
+    /*line-height: 178%;
+    */
+}
+
+.hero-content {
+    max-width: 450px;
+}
+
+.hero-content h1 {
+
+    font-weight: 600;
+    font-size: 8rem;
+    line-height: 113%;
+    color: var(--text-color);
+    margin-bottom: 24px;
+}
+
+.hero-content p {
+    color: var(--text-color);
+    line-height: 1.5;
+    margin-bottom: 32px;
+}
