@@ -22,6 +22,37 @@ html {
     font-size: 10px;
 }
 
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: stretch;
+    height: 75px;
+    background-color: #FFFF;
+    padding: 0 75px;
+    
+}
+
+.signup{
+    color: #2d2d2d;
+    text-decoration: none;
+}
+
+.active {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 125px;
+    height: 40px;
+    background-color: #3366FF;
+    color: #fff;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+}
+
 body {
     font-family: var(--font-family);
     font-weight: 400;
@@ -30,12 +61,28 @@ body {
     */
 }
 
+.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    height: 600px;
+    width: 1280;
+    background-color: #F7F5FD;
+    padding: 70px 100px;
+    gap: 600px;
+}
+
 .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     max-width: 450px;
 }
 
 .hero-content h1 {
-
+    font-family: ;
     font-weight: 600;
     font-size: 8rem;
     line-height: 113%;
@@ -47,4 +94,28 @@ body {
     color: var(--text-color);
     line-height: 1.5;
     margin-bottom: 32px;
+    opacity: 0.5;
 }
+
+
+.hero img {
+    height: 460px;
+    width: 500px;
+}
+
+.get_started {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 154px;
+    height: 53px;
+    background-color: #F8D57E;
+    color: #2d2d2d;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+
+
+
+
