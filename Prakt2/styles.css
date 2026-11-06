@@ -22,6 +22,9 @@ html {
     font-size: 10px;
 }
 
+
+
+
 .container {
     display: flex;
     flex-direction: row;
@@ -29,6 +32,7 @@ html {
     align-items: center;
     align-content: stretch;
     height: 75px;
+    width: auto;
     background-color: #FFFF;
     padding: 0 75px;
     
@@ -61,6 +65,9 @@ body {
     */
 }
 
+
+
+
 .hero {
     display: flex;
     flex-direction: row;
@@ -68,7 +75,7 @@ body {
     align-items: center;
     align-content: stretch;
     height: 600px;
-    width: 1280;
+    width: auto;
     background-color: #F7F5FD;
     padding: 70px 100px;
     gap: 600px;
@@ -82,7 +89,7 @@ body {
 }
 
 .hero-content h1 {
-    font-family: ;
+    font-family:;
     font-weight: 600;
     font-size: 8rem;
     line-height: 113%;
@@ -113,6 +120,125 @@ body {
     color: #2d2d2d;
     border-radius: 10px;
     text-decoration: none;
+}
+
+
+
+
+
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    height: 600px;
+    width: auto;
+    background-color: #e3f7f2;
+}
+
+.video-img {
+    width: 900px;
+    height: 480px;
+    display: block;
+}
+
+.video-rectangle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;          /* Займає рівно 765px */
+    height: 100%;         /* Займає рівно 460px */
+    background-color: rgba(0, 0, 0, 0.35);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .video-overlay {
+    position: relative;
+    width: 765px;         /* Фіксована ширина прямокутника */
+    height: 460px;        /* Фіксована висота прямокутника */
+    border-radius: 20px;  /* Заокруглення кутів */
+    overflow: hidden;     /* Обрізає все, що виходить за межі 765x460 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.play-btn {
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 50px solid #FFFFFF; 
+    margin-left: 5px;
+    border-radius: 5px;
+}
+
+
+
+.logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    width: auto;
+    background-color: #FFFFFF;
+    padding: 0 150px; 
+}
+
+.logos img {
+    max-height: 50px;
+    width: auto;
+}
+
+
+
+.features {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 500px;
+    width: auto;
+    padding: 125px 150px;
+    background-color: #f7e3dd; /* Білий фон як на макеті */
+    box-sizing: border-box;
+    gap: 40px; /* Відстань між картками */
+}
+
+.feature-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1; /* Кожна картка бере однакову ширину */
+    max-width: 300px;
+}
+
+.feature-icon {
+    width: 115px;
+    height: 115px;
+    object-fit: contain;
+    margin-bottom: 24px;
+}
+
+.feature-card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2D2D2D;
+    margin-bottom: 14px;
+}
+
+.feature-card p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #2D2D2D;
+    opacity: 0.7;
+    margin: 0;
+    max-width: 220px;
 }
 
 
