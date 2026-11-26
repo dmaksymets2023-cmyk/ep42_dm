@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prakt 3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav aria-label="Головна навігація">
+            <ul class="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#trivia">Trivia</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#scores">Scores</a></li>
+                <li><a href="#subscribe">Subscribe</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="section-block">
+            <h1>Ласкаво просимо до World Trivia!</h1>
+            <p>
+                <strong>World Trivia</strong> - це міжнародна освітньо-розважальна платформа для поціновувачів інтелектуальних вікторин, 
+                загадок та цікавих фактів з усього світу. Перевірте свою ерудицію, змагайтеся з гравцями з різних країн та відкривайте 
+                нові горизонти знань щодня!
+            </p>
+        </section>
+
+        <section id="trivia" class="section-block">
+            <h2>Цікаві факти дня (Trivia)</h2>
+
+            <article class="trivia-item">
+                <img src="assets/SS1.jpg" alt="Ілюстрація космосу та зірок">
+                <div>
+                    <h3>Найдавніший університет</h3>
+                    <p>Університет Аль-Карауїн у Марокко, заснований у 859 році нашої ери, вважається найстарішим безперервно діючим навчальним закладом у світі.</p>
+                </div>
+            </article>
+        </section>
+
+        <section id="scores" class="section-block">
+            <h2>Таблиця лідерів</h2>
+            <table class="scores-table">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Name</th>
+                        <th>Score</th>
+                        <th>Country</th>
+                        <th>Category</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                      <td>1</td>
+                        <td>Вацлав Роман</td>
+                        <td>9850</td>
+                        <td>Україна</td>
+                        <td>Наука і технології</td>
+                        <td>2025-05-10</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Elena Rostova</td>
+                        <td>9420</td>
+                        <td>Польща</td>
+                        <td>Географія світу</td>
+                        <td>2025-05-11</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Marcus Vance</td>
+                        <td>9100</td>
+                        <td>Канада</td>
+                        <td>Історія та культура</td>
+                        <td>2025-05-12</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Софія Мельник</td>
+                        <td>8890</td>
+                        <td>Україна</td>
+                        <td>Кіно та музика</td>
+                        <td>2025-05-12</td>
+                    </tr>  
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="subscribe" class="section-block">
+            <h2>Щоденний виклик</h2>
+            <p>Отримуйте нову інтелектуальну загадку щоранку прямо на вашу пошту.</p>
+            <button type="button" class="btn-subscribe" aria-label="Підписатися на розсилку Puzzle of the Day">
+                Підписатися на «Puzzle of the Day»
+                <span class="sr-only">(відкриє форму швидкої підписки)</span>
+            </button>
+        </section>
+
+        <section id="contact" class="section-block">
+            <h2>Зв'яжіться з нами</h2>
+            <p>Маєте запитання чи пропозиції нових запитань для вікторини? Напишіть нам!</p>
+            
+            <form class="contact-form" action="#" method="post">
+                <label for="user-name">Ваше ім'я:</label>
+                <input type="text" id="user-name" name="name" placeholder="Введіть ваше ім'я" required>
+
+                <label for="user-email">Електронна пошта (Email):</label>
+                <input type="email" id="user-email" name="email" placeholder="example@mail.com" required>
+
+                <label for="user-message">Повідомлення:</label>
+                <textarea id="user-message" name="message" rows="4" placeholder="Текст вашого повідомлення..." required></textarea>
+
+                <button type="submit" class="btn-submit">Надіслати повідомлення</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2025 World Trivia. Всі права захищено.</p>
+    </footer>
+    </main>
+</body>
+</html>
